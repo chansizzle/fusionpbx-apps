@@ -189,7 +189,7 @@
 
 				unset($sql, $prep_statement, $insert_array);
 
-				messages::add($text['label-add-complete']);
+				message::add($text['label-add-complete']);
 				header("Location: school_bells.php");
 				return;
 			} //if ($action == "add")
@@ -238,7 +238,7 @@
 				}
 				unset($sql, $prep_statement);
 
-				messages::add($text['label-update-complete']);
+				message::add($text['label-update-complete']);
 				header("Location: school_bells.php");
 				return;
 			} //if ($action == "update")
